@@ -21,6 +21,8 @@ Sample Appium test automation using Cucumber-JVM
 * Cucumber Java
 * Rest Assured - API processing
 
-
+## Test Execution
+$ `git clone https://github.com/SrinivasanTarget/AppiumCucumber.git `
+$ `mvn clean install`
 
 
