@@ -23,6 +23,7 @@ Sample Appium test automation using Cucumber-JVM
 
 ## Test Execution
 $ `git clone https://github.com/SrinivasanTarget/AppiumCucumber.git `
+
 $ `mvn clean install`
 
 

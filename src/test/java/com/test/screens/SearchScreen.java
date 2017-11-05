@@ -8,6 +8,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
@@ -57,7 +58,7 @@ public class SearchScreen {
     /*
     *   Returns List of Search Results
     */
-    public List<String> getSearchResults(String searchText) {
+    public List<String> getSearchResults(String searchText) throws ParseException {
         flickrAPIProcessor = new FlickrAPIProcessor();
         List<String> searchResult = new ArrayList<>();
         int count = flickrAPIProcessor.getSearchResponseTitles(searchText).size();
